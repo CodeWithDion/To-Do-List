@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1543572085-4e676d1f3d6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.form {
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    backdrop-filter: blur(20px);
+    border-radius: .5rem;
+    overflow: hidden;
+    border: 1px solid rgb(207, 195, 195);
+}
+
+.input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.input::placeholder {
+    color: lightgray;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    padding: 1rem 2rem;
+    border-top: 1px solid rgb(207, 195, 195);
+    position: relative;
+    color: white;
+}
+
+.list li.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.fa-square-check {
+    color: rgb(29, 216, 29);
+    position: absolute;
+    right: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.checked .fa-square-check {
+    color: gray;
+}
+
+.fa-trash {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
